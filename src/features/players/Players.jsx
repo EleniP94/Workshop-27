@@ -8,7 +8,7 @@ import { useGetPlayersQuery } from '../../api/puppyBowlApi';
 import '../../index.css'
 
 // Define a new React component
-const Players = () => {
+function Players () {
   // Use the generated hook to fetch data from the API
   // When the component is first rendered, it will start the API fetch
   // It will re-render each time the fetch status changes (e.g., "loading", "data arrived", "error")
@@ -33,12 +33,12 @@ console.log(data)
       
 
       {/* Map through the data array and generate a div for each player */}
-      {data?.data?.players.map((player) => (
+      {/* {data?.data?.players.map((player) => (
         // Use the player's ID as the key for this div
-        <div key={player.id} className="player-card">
+        <div key={player.id} className="player-card"> */}
           {/* Display the player's image, with the player's name as alt text */}
           
-          <div className="player-details">
+          {/* <div className="player-details">
             
             <h2>  {player.name} </h2> 
             
@@ -47,7 +47,7 @@ console.log(data)
             <p> {player.status} </p>
           </div>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 

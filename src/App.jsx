@@ -24,4 +24,4 @@ function App() {
 }
 
 // Export the App component as the default export
-export default App();
+export default App;

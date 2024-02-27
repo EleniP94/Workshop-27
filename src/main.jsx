@@ -1,12 +1,12 @@
 // Import the React and ReactDOM libraries
 // React is for defining components and ReactDOM is for rendering them in the DOM
 import React from "react";
-import { ReactDOM } from "react";
 
+
+import ReactDOM from "react-dom";
 
 // Import the main App component
 import App from "./App.jsx";
-
 
 // Import the CSS file
 import './index.css';
@@ -15,7 +15,6 @@ import './index.css';
 // The store is where you keep the app's state
 import {store} from "./app/store.js";
 // come back and check this, I may not have understood this correctly (did npm install for redux and may have misunderstood importing the app)
-
 
 // Import the Provider component from react-redux
 // Provider makes the Redux store available to any nested components that need to access it
