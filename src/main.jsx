@@ -5,7 +5,7 @@ import { ReactDOM } from "react";
 
 
 // Import the main App component
-import App from "./App";
+import App from "./App.jsx";
 
 
 // Import the CSS file
@@ -13,7 +13,7 @@ import './index.css';
 
 // Import the Redux store
 // The store is where you keep the app's state
-import {store} from "./app/store";
+import {store} from "./app/store.js";
 // come back and check this, I may not have understood this correctly (did npm install for redux and may have misunderstood importing the app)
 
 
@@ -26,9 +26,13 @@ import { Provider } from "react";
 // Also, wrap it in React.StrictMode, which is a wrapper component that checks for potential problems in the app during development
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <div className="intro">
+      <h1>Welcome to the Puppy Bowl!</h1>
+      
     <Provider store={store}>
       <App/>
     </Provider>
+    </div>
     
   </React.StrictMode>,
 

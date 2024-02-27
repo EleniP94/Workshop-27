@@ -1,6 +1,7 @@
 // Import the React library, which allows us to define components
 import React from "react";
 import Players from "./features/players/Players";
+import "./index.css";
 
 
 
@@ -14,7 +15,9 @@ function App() {
   // This div has a class of 'App', which we could use for styling
   return (
     <>
+    <div className="app">
    <Players/>
+   </div>
     </>
     
   );

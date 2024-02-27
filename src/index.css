@@ -39,9 +39,9 @@ body {
 }
 
 /* Styling for when a user hovers over a player card. */
-/* .player-card:hover { */
-  /* The card moves up 5 pixels when hovered over. */
-/* } */
+.player-card:hover {
+  transform: translateY(-5px);
+}
 
 /* Styling for the container that holds the player's image. */
 .player-image-container {
